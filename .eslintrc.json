@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "no-return-assign": ["off"],
+    "react/prop-types": ["warn"],
+    "max-len": ["error", { "code": 100 }],
+    "prefer-promise-reject-errors": ["off"],
+    "no-unused-vars": "warn"
+  }
+}
